@@ -1,0 +1,171 @@
+﻿	.our-team {
+        /* background: #edf4fd; */
+        /* background: #f7f5ec; */
+        background: #f6faff;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        margin: 10px 0px;
+        padding: 30px 30px;
+        width: 100%;
+	}
+
+	.our-team .pic {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+        z-index: 1;
+        position: relative;
+	}
+
+    .our-team .pic::before {
+        content: "";
+        width: 100%;
+        height: 0;
+        border-radius: 50%;
+        background: #212a3a;
+        position: absolute;
+        bottom: 135%;
+        right: 0;
+        left: 0;
+        opacity: 0.2;
+        transform: scale(3);
+        transition: all 0.3s linear 0s;
+    }
+
+    .our-team:hover .pic::before {
+        height: 100%;
+    }
+
+    .our-team .pic:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        color: #212a3a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .our-team .pic img {
+        width: 100%;
+        height: 150px;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: all 0.9s ease 0s;
+    }
+
+    .our-team:hover .pic img {
+        box-shadow: 0 0 0 12px #f6faff;
+        /* box-shadow: 0 0 0 12px #edf4fd; */
+        /* box-shadow: 0 0 0 12px #f7f5ec; */
+        transform: scale(0.75);
+    }
+
+    .our-team .team-content {
+        margin-bottom: 20px;
+        display: inline;
+    }
+
+    .our-team .team-content .member-name {
+        display: block;
+    }
+
+    .our-team .title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #4e5052;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+
+    .our-team .post {
+        display: block;
+        font-size: 15px;
+        color: #4e5052;
+        padding-top: 5px;
+        padding-bottom: 12px;
+    }
+
+    .our-team .social {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: #212a3a;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+        text-align: center;
+    }
+
+    .our-team:hover .social {
+        bottom: 0;
+    }
+
+    .our-team .social li {
+        display: inline-block;
+    }
+
+	.our-team .social li a {
+        text-decoration: none;
+		display: block;
+        padding: 10px;
+        font-size: 17px;
+        color: #ffffff;
+        transition: all 0.3s ease 0s;
+	}
+
+    .our-team .social li a:hover {
+        color: #212a3a;
+        background: #f7f5ec;
+    }
+
+    .center-tile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subsystem-heading {
+        width: 95%;
+        margin-top: 25px;
+    }
+
+    .subsystem-heading h4 {
+        color: #4e4e4e;
+        text-align: center;
+    }
+
+	@media (max-width: 765px) {
+
+		.our-team {
+            margin-top: 30px;
+		}
+
+        .our-team .team-content .title {
+            padding-bottom: 10px;
+        }
+
+        .our-team .team-content .member-name {
+            display: inline;
+        }
+
+        .center-tile {
+            display: block;
+        }
+	}
+
+    @media (max-width: 700px){
+        .col-lg-3.col-md-4{
+            width: 100%;
+        }
+        div.all.center-tile.container{
+            width: 100%;
+        }
+        
+    }
+

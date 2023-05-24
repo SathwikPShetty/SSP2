@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog_style.css">
+    <link rel="shortcut icon" type="image/png" href="img/satlogo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+/* *{
+  font-size: 14px;
+} */
+</style>    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+    
+            <div class="navbar-header">
+                <button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php"><img src="img/satlogo.png"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.php" style="font-size:14px;">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:14px;">Systems
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pratham.php" style="font-size:16px;">Pratham</a></li>
+                            <li><a href="advitiy.php" style="font-size:16px;">Advitiy</a></li>
+                            <li><a href="sanket.php" style="font-size:16px;">Sanket</a></li>
+                            <li><a href="stads.php" style="font-size:16px;">STADS</a></li>
+                            <li><a href="glee.php" style="font-size:16px;">GLEE</a></li>
+                            <li><a href="rvd.php" style="font-size:16px;">RVD</a></li>
+                            <li><a href="ham.php" style="font-size:16px;">HRC & GSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:14px;">Subsystems
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="communication.php" style="font-size:16px;">Communication</a></li>
+                            <li><a href="electrical.php" style="font-size:16px;">Electrical</a></li>
+                            <li><a href="gnc.php" style="font-size:16px;">GNC</a></li>
+                            <li><a href="instrumentation.php" style="font-size:16px;">Instrumentation</a></li>
+                            <li><a href="mechanical.php" style="font-size:16px;">Mechanical</a></li>
+                            <li><a href="payload.php" style="font-size:16px;">Payload</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:14px;">About Us
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blogs.php" style="font-size:16px;">Blogs</a></li>
+                            <li><a href="gallery.php" style="font-size:16px;">Gallery</a></li>
+                            <li><a href="media.php" style="font-size:16px;">Media</a></li>
+                            <li><a href="faq.php" style="font-size:16px;">FAQs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:14px;">Journey
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="timeline.php" style="font-size:16px;">Timeline</a></li>
+                            <li><a href="publications.php" style="font-size:16px;">Publications</a></li>
+                            <li><a href="globaloutreach.php" style="font-size:16px;">Global Outreach</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size:14px;">Team
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/team" style="font-size:16px;">Current Team</a></li>
+                            <li><a href="alumni.php" style="font-size:16px;">Alumni</a></li>
+                            <!-- <li><a href="#">Faculty</a></li>
+                            <li><a href="#">Organization</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="/contact" style="font-size:14px;">Contact</a></li>
+                    <li><button class="btn navbar-btn"
+                            onclick="window.open('https://www.aero.iitb.ac.in/satelliteWiki/index.php/Satellite_101', '_blank')" style="color: #212a3a">Wiki</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+    </nav>
+    {% block body %}{% endblock body %}
+</body>
+</html>

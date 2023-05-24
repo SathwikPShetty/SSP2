@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% endblock body %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Form</title>
+</head>
+<body>
+  <h1>Profile Form</h1>
+
+  <form method="post" action="{% url 'profile_submit' %}">
+    {% csrf_token %}
+
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+
+    <label for="middle_name">Middle Name:</label>
+    <input type="text" id="middle_name" name="middle_name">
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required>
+
+    <label for="linkedin">LinkedIn Profile:</label>
+    <input type="url" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/">
+
+    <label for="instagram">Instagram Profile:</label>
+    <input type="url" id="instagram" name="instagram" placeholder="https://www.instagram.com/">
+
+    <label for="github">GitHub Profile:</label>
+    <input type="url" id="github" name="github" placeholder="https://github.com/">
+
+    <label for="profile_pic">Profile Picture:</label>
+    <input type="file" id="profile_pic" name="profile_pic">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+
+{% block body %}
